@@ -1,10 +1,10 @@
 //your JS code here. If required.
-let para = document.getElementById('counter');
-let btn = document.getElementById('increment');
+var counterElement = document.getElementById('counter');
+var incrementBtn = document.getElementById('incrementBtn');
 
-btn.addEventListener('click', function(){
-	var currValue = parseInt(para.innerText);
-	para.innerText = currValue + 1;
-
-	alert(currValue);
+incrementBtn.addEventListener('click', function () {
+	var currentValue = parseInt(counterElement.innerText);
+    counterElement.innerText = currentValue + 1;
+			
+    alert(currentValue);
 });
